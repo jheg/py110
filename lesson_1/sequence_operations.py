@@ -81,4 +81,5 @@ print(tuple_list) # (1, 2, 3, 4, 5, 6)
 list_tuple = list(my_tuple)
 print(list_tuple) # [1, 2, 4, 5, 6]
 
+# using a comprehension to join not string types
 print(", ".join([str(element) for element in my_list]))
