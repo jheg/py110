@@ -123,3 +123,6 @@ index = 0
 while index < len(name):
     print(name[index])
     index += 1
+
+name = "Jason Lee Hegarty"
+print(name[-1::-1]) # ytrageH eeL nosaJ

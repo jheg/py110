@@ -1,3 +1,9 @@
+# List unpacking
+shades = ['crimson', 'emerald', 'azure']
+r, g, b = shades
+
+print(f'{r = }, {g = }, {b = }') # r = 'crimson', g = 'emerald', b = 'azure'
+
 # list.count(object)
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 1]
 print(nums.count(1)) # 3
