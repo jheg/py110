@@ -160,7 +160,6 @@ my_list = ["name", "Jason"]
 my_tuple = ("name", "Jason")
 
 print(set(fruit)) # {'p', 'e', 'a', 'l'}
-print(set(my_list))
-print(set(my_tuple))
-print(set(outgoing))
-
+print(set(my_list)) # {'name', 'Jason'}
+print(set(my_tuple)) # {'name', 'Jason'}
+print(set(outgoing)) # {'amount', 'category', 'frequency'}
