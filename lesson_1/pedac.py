@@ -18,10 +18,8 @@ Rules:
 	Implicit Requirements :		
 	- If no palindromes exist return an empty list 
 Algorithm:
-    - X Create a palindrome_substrings function
     - X Declare a result variable and initialise it to an empty list 
     - X Declare a substrings variable and initialise it to an empty list
-    - X Add string to substrings
     - X Add to substrings all the substrings of string containing 2 or more characters
         Example word: "abba"
         Substrings: 
