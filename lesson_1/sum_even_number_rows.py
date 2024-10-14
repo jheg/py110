@@ -38,7 +38,7 @@ Algorithm:
         - The row is a list
         - Row contains integers
         - The integers are consecutive even numbers
-        - The integers in each row form part of an overal sequence
+        - The integers in each row form part of an overall sequence
         - Each row has a different length
 
         Input: 
