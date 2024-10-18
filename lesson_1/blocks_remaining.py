@@ -17,7 +17,7 @@ number of blocks left over after building the tallest possible valid structure.
 
 def calculate_leftover_blocks(blocks_remaining):
     current_layer = 1
-    
+        
     while True:
         layer_blocks_required = current_layer * current_layer
         if blocks_remaining < 1:

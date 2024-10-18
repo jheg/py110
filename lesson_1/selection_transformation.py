@@ -80,3 +80,65 @@ def mut_double_numbers(nums):
     return nums
 
 print(mut_double_numbers([1,2,3,4,5]))
+
+def mut2_double_numbers(nums):
+    for idx in range(len(nums)):
+        nums[idx] *= 2
+
+    return nums
+
+print(mut2_double_numbers([1,2,3,4,5]))
+
+def double_if_odd_idx(nums):
+    transformed_nums = []
+
+    for idx in range(len(nums)):
+        if idx % 2 == 0:
+            transformed_nums.append(nums[idx])
+        else:
+            transformed_nums.append(nums[idx] * 2)
+    
+    return transformed_nums
+
+print(double_if_odd_idx([1,2,3,4,5]))
+
+
+"""
+Given a dictionary of produce, return the items that match the selection 
+criterion. 
+"""
+def select_type(produce_list, selection_criterion):
+    selected_items = {}
+
+    for current_key, current_value in produce_list.items():
+        if current_value == selection_criterion:
+            selected_items[current_key] = current_value
+        
+    return selected_items
+
+# Test cases
+print(select_type(produce, 'Fruit'))
+# {'apple': 'Fruit', 'pear': 'Fruit'}
+
+print(select_type(produce, 'Vegetable'))
+# {'carrot': 'Vegetable', 'broccoli': 'Vegetable'}
+
+print(select_type(produce, 'Meat'))
+# {}
+
+"""
+Given a list of numbers return a new list of numbers where each number is
+multiplied by a given multiplier. 
+"""
+
+def multiply(nums, multiplier):
+    multiplied_nums = []
+
+    for num in nums:
+        multiplied_nums.append(num * multiplier)
+
+    return multiplied_nums
+
+# Test case
+my_numbers = [1, 4, 3, 7, 2, 6]
+print(multiply(my_numbers, 3))  # [3, 12, 9, 21, 6, 18]
