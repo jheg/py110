@@ -56,12 +56,11 @@ five_numbers = []
 def get_five_numbers():
     for num in range(5):
         user_input = int(input(f'Enter number {num + 1}: '))
-        if user_input < 26:
+        while user_input < 26:
             user_input = int(input(
                 f'Number must be greater than 25, Enter number {num + 1}: '
                 ))
-        else:
-            five_numbers.append(str(user_input))
+        five_numbers.append(str(user_input))
 
 def display_result():
     sixth_number = input('Please enter your sixth number: ')
